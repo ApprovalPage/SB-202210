@@ -427,7 +427,15 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,88];
 	// timeline functions:
 	this.frame_0 = function() {
+		this.gotoAndPlay(88);
 		//if(!this.alreadyyExecuted){
+		//this.alreadyyExecuted=true;
+		//	this.clickthru_btn.on("click", function(evt){
+		//  window.open(clickTag, "_blank");
+		//});
+		//} else {
+		//gotoAndPlay(2);
+		//}this.gotoAndPlay(88);//if(!this.alreadyyExecuted){
 		//this.alreadyyExecuted=true;
 		//	this.clickthru_btn.on("click", function(evt){
 		//  window.open(clickTag, "_blank");
@@ -453,15 +461,19 @@ if (reversed == null) { reversed = false; }
 
 	// HEAD
 	this.instance = new lib.HEAD();
-	this.instance.setTransform(65.25,77.85,0.4704,0.4761,0,0,0,113.5,148.7);
+	this.instance.setTransform(65.25,86.6,0.4704,0.4761,0,0,0,113.5,148.6);
+	this.instance.alpha = 0;
+	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(89));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({regY:148.7,y:77.85,alpha:1},10,cjs.Ease.quadOut).wait(78));
 
 	// CTA
 	this.instance_1 = new lib.CTA();
-	this.instance_1.setTransform(210.35,46.7,0.674,0.6808,0,0,0,99.9,26);
+	this.instance_1.setTransform(210.35,56.3,0.674,0.6808,0,0,0,99.9,26.1);
+	this.instance_1.alpha = 0;
+	this.instance_1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(89));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({regY:26,y:46.7,alpha:1},10,cjs.Ease.quadOut).wait(78));
 
 	// LOGO
 	this.instance_2 = new lib.SeattleBankboxwhitevector();
@@ -485,7 +497,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(160,25,160,25);
+p.nominalBounds = new cjs.Rectangle(160,25,160,29.4);
 // library properties:
 lib.properties = {
 	id: '0957C5EC3B874C629166840920B09671',
