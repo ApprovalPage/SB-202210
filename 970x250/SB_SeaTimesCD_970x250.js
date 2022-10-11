@@ -2007,7 +2007,6 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,88];
 	// timeline functions:
 	this.frame_0 = function() {
-		this.gotoAndPlay(88);
 		//if(!this.alreadyyExecuted){
 		//this.alreadyyExecuted=true;
 		//	this.clickthru_btn.on("click", function(evt){
@@ -2030,7 +2029,7 @@ if (reversed == null) { reversed = false; }
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(88).call(this.frame_88).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(88).call(this.frame_88).wait(56));
 
 	// RATE 12
 	this.instance = new lib.RATE12();
@@ -2038,7 +2037,7 @@ if (reversed == null) { reversed = false; }
 	this.instance.alpha = 0;
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({y:193.8,alpha:1},10,cjs.Ease.quadOut).wait(78));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(15).to({_off:false},0).to({y:193.8,alpha:1},10,cjs.Ease.quadOut).wait(119));
 
 	// RATE 24
 	this.instance_1 = new lib.RATE24();
@@ -2046,14 +2045,14 @@ if (reversed == null) { reversed = false; }
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({y:291.3,alpha:1},10,cjs.Ease.quadOut).wait(78));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(18).to({_off:false},0).to({y:291.3,alpha:1},10,cjs.Ease.quadOut).wait(116));
 
 	// rule
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#34B8EB").s().p("AgTNaIAA6zIAnAAIAAazg");
 	this.shape.setTransform(264.75,125.025);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(89));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(144));
 
 	// HEAD
 	this.instance_2 = new lib.HEAD();
@@ -2061,7 +2060,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.alpha = 0;
 	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(3).to({_off:false},0).to({y:241.05,alpha:1},10,cjs.Ease.quadOut).wait(76));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({_off:false},0).to({y:241.05,alpha:1},10,cjs.Ease.quadOut).wait(133));
 
 	// SUB
 	this.instance_3 = new lib.SUB();
@@ -2069,7 +2068,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_3.alpha = 0;
 	this.instance_3._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(6).to({_off:false},0).to({y:316.75,alpha:1},10,cjs.Ease.quadOut).wait(73));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(4).to({_off:false},0).to({y:316.75,alpha:1},10,cjs.Ease.quadOut).wait(130));
 
 	// CTA
 	this.instance_4 = new lib.CTA();
@@ -2077,7 +2076,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_4.alpha = 0;
 	this.instance_4._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(74).to({_off:false},0).to({y:112.7,alpha:1},10,cjs.Ease.quadOut).wait(5));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(74).to({_off:false},0).to({y:112.7,alpha:1},10,cjs.Ease.quadOut).wait(60));
 
 	// LEGAL
 	this.instance_5 = new lib.LEGAL();
@@ -2085,33 +2084,33 @@ if (reversed == null) { reversed = false; }
 	this.instance_5.alpha = 0;
 	this.instance_5._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(77).to({_off:false},0).to({y:160.3,alpha:1},10,cjs.Ease.quadOut).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(77).to({_off:false},0).to({y:160.3,alpha:1},10,cjs.Ease.quadOut).wait(57));
 
 	// LOGO
 	this.instance_6 = new lib.SeattleBankhorizwhitevector();
 	this.instance_6.setTransform(833.55,50,1.5899,1.5899,0,0,0,64.7,13.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(89));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(144));
 
 	// FDIC
 	this.instance_7 = new lib.MemberFDICwhite();
 	this.instance_7.setTransform(664.8,227.5,1,1,0,0,0,18.8,11.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(89));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(144));
 
 	// BOX bottom
 	this.shape_1 = new cjs.Shape();
 	this.shape_1.graphics.f("#2283AE").s().p("A1UTiMAAAgnDMAqpAAAMAAAAnDg");
 	this.shape_1.setTransform(833.3,124.95);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(89));
+	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(144));
 
 	// BKGD
 	this.shape_2 = new cjs.Shape();
 	this.shape_2.graphics.f("#185975").s().p("EhLxATiMAAAgnDMCXjAAAMAAAAnDg");
 	this.shape_2.setTransform(485,125);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape_2).wait(89));
+	this.timeline.addTween(cjs.Tween.get(this.shape_2).wait(144));
 
 	this._renderFirstFrame();
 
